@@ -1,0 +1,14 @@
+argoday/Alliance:
+
+  Build:
+    - sbt compile
+  PkgInclude:
+    - '*'
+
+  PostInstall:
+    - ./deploy/setup.sh
+    - #./deploy/deregister-from-elb.sh
+  Exec:
+    - sbt run
+  PostStart:
+    - #./deploy/register-with-elb.sh

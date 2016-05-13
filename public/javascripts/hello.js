@@ -1,4 +1,4 @@
 
 if (window.console) {
-  console.log("Welcome to JavaScript!");
+  console.log("Thanks for looking at our javascript!");
 }
