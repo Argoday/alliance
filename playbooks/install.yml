@@ -1,5 +1,5 @@
 
 - hosts: localhost
   roles:
-     - ansible-java
-     - ansible-scala
+     - JasonGiedymin.java
+     - JasonGiedymin.scala
