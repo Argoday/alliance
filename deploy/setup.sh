@@ -9,5 +9,6 @@ sudo apt-get install ansible -y
 
 sudo ansible-galaxy install JasonGiedymin.java
 sudo ansible-galaxy install JasonGiedymin.scala
+sudo ansible-galaxy install JasonGiedymin.sbt
 
 sudo ansible-playbook -i ./playbooks/hosts ./playbooks/install.yml
