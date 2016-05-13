@@ -2,7 +2,7 @@ argoday/alliance-website:
 
   Build:
     - ./deploy/setup.sh
-    - sbt compile
+    - sbt clean compile
   PkgInclude:
     - '*'
 
