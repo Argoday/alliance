@@ -1,5 +1,8 @@
 
 - hosts: localhost
+  vars:
+    - java_version: "8"
+    - scala_version: "2.11.8"
   roles:
      - JasonGiedymin.java
      - JasonGiedymin.scala
