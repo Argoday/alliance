@@ -1,0 +1,11 @@
+
+.footer-container {
+    min-height: 30px;
+    background: #FFBF00;
+}
+
+.footer-item {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+}

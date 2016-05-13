@@ -1,0 +1,9 @@
+target/
+logs/
+.sbtserver
+.sbtserver.lock
+.DS_Store
+.classpath
+.metadata/
+.project
+.sbtserver/

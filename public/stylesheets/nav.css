@@ -1,0 +1,11 @@
+
+.nav-container {
+    min-height: 40px;
+    background: #FFBF00;
+}
+
+.nav-title {
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+}
