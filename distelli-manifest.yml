@@ -1,6 +1,7 @@
 argoday/Alliance:
 
   Build:
+    - ./deploy/setup.sh
     - sbt compile
   PkgInclude:
     - '*'
