@@ -1,4 +1,4 @@
-argoday/Alliance:
+argoday/alliance-website:
 
   Build:
     - ./deploy/setup.sh
