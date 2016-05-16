@@ -10,6 +10,7 @@ argoday/alliance-website:
     - ./deploy/setup.sh
     - #./deploy/deregister-from-elb.sh
   Exec:
-    - sbt run
+    - sbt stage
+    - ./target/universal/stage/bin/play-scala -J-server -J-Xms765m -J-Xmx765m -J-XX:+UseConcMarkSweepGC -J-XX:+CMSParallelRemarkEnabled -J-XX:+ScavengeBeforeFullGC -J-XX:+CMSScavengeBeforeRemark -Dsun.net.inetaddr.ttl=60
   PostStart:
     - #./deploy/register-with-elb.sh
