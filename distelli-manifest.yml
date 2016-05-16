@@ -1,16 +1,18 @@
 argoday/alliance-website:
 
   Build:
-    - ./deploy/setup.sh
+    - #./deploy/setup.sh
     - sbt clean compile
   PkgInclude:
     - '*'
 
   PostInstall:
-    - ./deploy/setup.sh
+    - echo "PostInstall"
+    - #./deploy/setup.sh
     - #./deploy/deregister-from-elb.sh
   Exec:
     - sbt stage
     - ./target/universal/stage/bin/play-scala -J-server -J-Xms400m -J-Xmx400m -J-XX:+UseConcMarkSweepGC -J-XX:+CMSParallelRemarkEnabled -J-XX:+ScavengeBeforeFullGC -J-XX:+CMSScavengeBeforeRemark -Dsun.net.inetaddr.ttl=60
   PostStart:
+    - echo "PostStart"
     - #./deploy/register-with-elb.sh
