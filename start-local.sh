@@ -5,4 +5,4 @@ echo "-------------------"
 echo "STAGE=$STAGE"
 echo "-------------------"
 
-sbt run
+sbt run -Dconfig.resource=application-local.conf
