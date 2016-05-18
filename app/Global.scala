@@ -10,7 +10,7 @@ import scala.concurrent._
 object Configuration {
   object Stage {
     case object Local extends Stage
-    case object Prod extends Stage    
+    case object Prod extends Stage
   }
   class Stage {
   }
