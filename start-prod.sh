@@ -7,4 +7,4 @@ echo "-------------------"
 
 sbt stage
 
-./target/universal/stage/bin/play-scala -Dconfig.resource=application-prod.conf -J-server -J-Xms400m -J-Xmx400m -J-XX:+UseConcMarkSweepGC -J-XX:+CMSParallelRemarkEnabled -J-XX:+ScavengeBeforeFullGC -J-XX:+CMSScavengeBeforeRemark -Dsun.net.inetaddr.ttl=60
+./target/universal/stage/bin/play-scala -Dconfig.resource=application-prod.conf -J-server -J-Xms250m -J-Xmx250m -J-XX:+UseConcMarkSweepGC -J-XX:+CMSParallelRemarkEnabled -J-XX:+ScavengeBeforeFullGC -J-XX:+CMSScavengeBeforeRemark -Dsun.net.inetaddr.ttl=60
