@@ -10,9 +10,9 @@ argoday/alliance-website:
     - echo "PostInstall"
     - echo "-" #./deploy/setup.sh
     - echo "-" #./deploy/deregister-from-elb.sh
-  Exec:
-    - sbt stage
-    - ./start-prod.sh
+  Start:
+    - screen -X -S "alliance-prod" quit || echo "Not running"
+    - screen -Sd alliance-prod ./start-prod.sh
   PostStart:
     - echo "PostStart"
     - echo "-" #./deploy/register-with-elb.sh
