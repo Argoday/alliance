@@ -4,4 +4,5 @@ until $(curl --output /dev/null --silent --head --fail http://localhost:9000/pin
   printf '.'
   sleep 2
 done
+echo "."
 echo "Finished waiting for webserver to start up"

@@ -9,17 +9,19 @@ argoday/alliance-website:
   PostInstall:
     - echo "PostInstall"
     - echo "-" #./deploy/setup.sh
+
   PreStart:
     - echo "PreStart"
+    - sbt stage
     - echo "-" #./deploy/deregister-from-elb.sh
-  Start:
-    - echo "Start - Start"
     - screen -ls || echo "No screens"
     - screen -X -S "alliance-prod" quit || echo "Not running"
+    - ./deploy/validate-down.sh
+  Start:
+    - echo "./start-prod.sh"
     - screen -dmS "alliance-prod" ./start-prod.sh
     - screen -ls || echo "No screens"
-    - echo "End - Start"
   PostStart:
     - echo "PostStart"
-    - ./deploy/validate.sh
+    - ./deploy/validate-up.sh
     - echo "-" #./deploy/register-with-elb.sh
