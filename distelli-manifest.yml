@@ -12,10 +12,10 @@ argoday/alliance-website:
     - echo "-" #./deploy/deregister-from-elb.sh
   Start:
     - echo "StartStart"
-    - screen -ls
+    - screen -ls || echo "No screens"
     - screen -X -S "alliance-prod" quit || echo "Not running"
     - screen -dmS "alliance-prod" ./start-prod.sh
-    - screen -ls
+    - screen -ls || echo "No screens"
     - echo "EndStart"
   PostStart:
     - echo "PostStart"
