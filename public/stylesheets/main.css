@@ -13,17 +13,101 @@ input, textarea, select {
   font-size: 110%;
   line-height: 1.1;
 }
+body {
+  color: #222222;
+  font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
 /**********************************/
 
-.logo-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+.manifesto-container {
+  width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alliance-title {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: large;
+
+  border-bottom: #FFBF00;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .logo-img {
   width: 150px;
   height: 150px;
+}
+
+.bad-term {
+  color: #000000;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.good-term {
+  color: #000000;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.point-block {
+  display: inline-block;
+  width: 380px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+}
+
+.bad-point-block {
+  border: 3px solid #FF0000;
+}
+
+.good-point-block {
+  border: 3px solid #000000;
+}
+
+.point {
+  width: 260px;
+
+  text-align: center;
+  padding-top: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;  
+}
+
+.bad-point {
+  border-bottom: #0000FF;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.good-point {
+  border-bottom: #FFBF00;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.sub-points {
+  text-align: center;
+  font-size: small;
+  padding-bottom: 10px;
 }
