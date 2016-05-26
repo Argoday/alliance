@@ -19,10 +19,14 @@ body {
 }
 /**********************************/
 
-.clean-link {
+.clean-link, .clean-link:visited {
   color: inherit;
   text-decoration: none;
 }
+.clean-link:hover, .clean-link:focus {
+  text-decoration: underline;
+}
+
 .manifesto-container {
   width: 1000px;
   text-align: center;
