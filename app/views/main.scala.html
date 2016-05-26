@@ -15,12 +15,17 @@
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-square70x70logo" content="@routes.Assets.versioned("images/favi/mstile-70x70.png")" />
 
-    @*<script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>*@
+<script src="@routes.Assets.versioned("lib/jquery/jquery-2.2.4.min.js")"></script>
+
+<link rel="stylesheet" href="@routes.Assets.versioned("lib/drop/css/drop-theme-arrows-bounce.min.css")" />
+<script src="@routes.Assets.versioned("lib/tether/js/tether.min.js")"></script>
+<script src="@routes.Assets.versioned("lib/drop/js/drop.min.js")"></script>
+
   </head>
   <body>
     @*<div>
       <div>@nav()</div>
-      <div>@content</div>
+      <div>@content</div>r
       <div>@footer()</div>
     </div>*@
     <div class="manifesto-container">
@@ -32,85 +37,183 @@
 
 <div>It is time to craft a new political organization to replace the parties.</div>
 
-<div class="point-block bad-point-block">
-<div class="point bad-point">Parties are <span class="bad-term">opaque</span></div>
-<div class="sub-points">Complex rules · Partisan · Rewards conflict</div>
-
-<div class="point bad-point">Parties <span class="bad-term">corrupt</span> candidates</div>
-<div class="sub-points">Candidate fund raising · Poor character · Lack knowledge</div>
-
-<div class="point bad-point">Parties enable the <span class="bad-term">wealthy</span> class</div>
-<div class="sub-points">Lobbyists first · Employer's choice · Money is speech</div>
-</div>
-
-<div class="point-block good-point-block">
-<div class="point good-point">Alliance is <span class="good-term">transparent</span></div>
-<div class="sub-points">Simple rules · Receptive · Rewards success</div>
-
-<div class="point good-point">Alliance <span class="good-term">supports</span> candidates</div>
-<div class="sub-points">Alliance fund raising · Personal coaching · Continuous education</div>
-
-<div class="point good-point">Alliance enables the <span class="good-term">common</span> class</div>
-<div class="sub-points">Voters first · Employee's rights · Community is speech</div>
-</div>
-
-<pre style="display: none;">
-With links / annotations
---------------
-
-Bad                                  -> Good
-
-- Parties are /opaque/               -> - Alliance is /transparent/
-
---- Complex rules                    -> --- Simple rules
-John Oliver - Primaries and Caucuses https://www.youtube.com/watch?v=_S2G8jhhUHg
-
---- Partisan                         -> --- Receptive
-https://www.washingtonpost.com/blogs/the-fix/wp/2014/04/14/how-congress-became-more-partisan-over-time-in-four-charts
-http://www.brookings.edu/research/interactives/2013/historical-house-ideology-and-party-unity
-
---- Rewards conflict                 -> --- Rewards success
-http://www.bloomberg.com/view/articles/2016-04-30/here-s-your-degree-now-go-defeat-demagogues
-
-
-
-- Parties /corrupt/ candidates       -> - Alliance /supports/ candidates
-
-
---- Candidate fund raising           -> --- Alliance fund raising
-John Oliver - Congressional fund raising https://www.youtube.com/watch?v=Ylomy1Aw9Hk
-
---- Poor character                   -> --- Personal coaching
-https://en.wikipedia.org/wiki/List_of_federal_political_scandals_in_the_United_States
-
---- Lack knowledge                   -> --- Continuous education
-Emily Calandrelli - TED - I don't do Math https://www.youtube.com/watch?v=y44nqo11Fh0
-John Oliver - Scientific Studies https://www.youtube.com/watch?v=0Rnq1NpHdmw
-
-
-- Parties enable the /wealthy/ class -> - Alliance enables the /common/ class
-
-
---- Lobbyists first                  -> --- Voters first
-John Oliver - Stadiums https://www.youtube.com/watch?v=xcwJt4bcnXs
-
---- Employer's choice                -> --- Employee's rights
-See: Hobby Lobby
-
---- Money is speech                  -> --- Community is speech
-See: Citizens United
-
-
-par·ty
+<div class="point-block">
+<span class="drop-container">
+  <a class="drop-target point-block-title">Parties</a>
+  <div class="drop-content">
+<pre>par·ty
 ˈpärdē
 noun
 1. a social gathering of invited guests, typically involving eating, drinking, and entertainment.
 2. a formally constituted political group, typically operating on a national basis, that contests elections and attempts to form or take part in a government.
+</pre>
+  </div>
+</span>
+<div class="bad-point-block">
+<div class="point bad-point">Parties are <span class="bad-term">opaque</span></div>
+<div class="sub-points">
+<span class="drop-container">
+  <a class="drop-target">Complex rules</a>
+  <div class="drop-content">
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/_S2G8jhhUHg?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Partisan</a>
+  <div class="drop-content">
+https://www.washingtonpost.com/blogs/the-fix/wp/2014/04/14/how-congress-became-more-partisan-over-time-in-four-charts
+http://www.brookings.edu/research/interactives/2013/historical-house-ideology-and-party-unity
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Rewards conflict</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+</div>
 
-al·li·ance
+<div class="point bad-point">Parties <span class="bad-term">corrupt</span> candidates</div>
+<div class="sub-points">
+<span class="drop-container">
+  <a class="drop-target">Candidate fund raising</a>
+  <div class="drop-content">
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/Ylomy1Aw9Hk?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Poor character</a>
+  <div class="drop-content">
+https://en.wikipedia.org/wiki/List_of_federal_political_scandals_in_the_United_States
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Lack knowledge</a>
+  <div class="drop-content">
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/y44nqo11Fh0?rel=0" frameborder="0" allowfullscreen></iframe>
+<br>? John Oliver - Scientific Studies https://www.youtube.com/watch?v=0Rnq1NpHdmw
+  </div>
+</span>
+</div>
+
+<div class="point bad-point">Parties enable the <span class="bad-term">wealthy</span> class</div>
+<div class="sub-points">
+<span class="drop-container">
+  <a class="drop-target">Lobbyists first</a>
+  <div class="drop-content">
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/xcwJt4bcnXs?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Employer's choice</a>
+  <div class="drop-content">
+See: Hobby Lobby
+See: Unions
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Money is speech</a>
+  <div class="drop-content">
+See: Citizens United
+  </div>
+</span>
+</div>
+</div>
+</div>
+
+<div class="point-block">
+<span class="drop-container">
+  <a class="drop-target point-block-title">Alliance</a>
+  <div class="drop-content">
+<pre>al·li·ance
 əˈlīəns
 noun
 a union or association formed for mutual benefit, especially between countries or organizations.
+</pre>
+  </div>
+</span>
+<div class="good-point-block">
+<div class="point good-point">Alliance is <span class="good-term">transparent</span></div>
+<div class="sub-points">
+<span class="drop-container">
+  <a class="drop-target">Simple rules</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Receptive</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Rewards success</a>
+  <div class="drop-content">
+http://www.bloomberg.com/view/articles/2016-04-30/here-s-your-degree-now-go-defeat-demagogues
+  </div>
+</span>
+</div>
+
+<div class="point good-point">Alliance <span class="good-term">supports</span> candidates</div>
+<div class="sub-points">
+<span class="drop-container">
+  <a class="drop-target">Alliance fund raising</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Personal coaching</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Continuous education</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+</div>
+
+<div class="point good-point">Alliance enables the <span class="good-term">common</span> class</div>
+<div class="sub-points">
+<span class="drop-container">
+  <a class="drop-target">Voters first</a>
+  <div class="drop-content">
+99% Invisible - Butterfly effects http://99percentinvisible.org/episode/butterfly-effects/
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Employee's rights</a>
+  <div class="drop-content">
+See: Richard Wolff
+  </div>
+</span>
+·
+<span class="drop-container">
+  <a class="drop-target">Community is speech</a>
+  <div class="drop-content">
+    Hello!
+  </div>
+</span>
+</div>
+</div>
+</div>
+
+<pre style="display: none;">
 
 
 #notaparty
@@ -118,6 +221,8 @@ a union or association formed for mutual benefit, especially between countries o
 
 - Jonathan Word
 </pre>
+
+    <script src="@routes.Assets.versioned("javascripts/manifesto.js")" type="text/javascript"></script>
 
     </div>
   </body>
