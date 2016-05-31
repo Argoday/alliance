@@ -147,6 +147,19 @@ body {
 
 .action-text {
   font-family: monospace;
-  white-space: pre;
   margin: 1em 0px 1em;
+}
+
+.action-button {
+  font-family: monospace;
+  display: inline-block;
+  background: #FFE088;
+  font-size: large;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+.action-button:hover {
+  background: #FFBF00;
 }
