@@ -131,7 +131,6 @@ body {
 
 .drop-container:hover {
   background: #FFF7E0;
-
   border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -webkit-border-radius: 2px 2px 2px 2px;
@@ -144,4 +143,10 @@ body {
 .drop-element.drop-theme-arrows-bounce .drop-content {
   -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .8));
   filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .8));
+}
+
+.action-text {
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px 1em;
 }
