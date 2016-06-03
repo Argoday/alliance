@@ -1,3 +1,4 @@
+@import scala.util.Random
 @(title: String)(content: Html)
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +21,7 @@
 <script src="@routes.Assets.versioned("lib/tether/js/tether.min.js")"></script>
 <script src="@routes.Assets.versioned("lib/drop/js/drop.min.js")"></script>
 
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/reset.css")">
     <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
   </head>
   <body>
@@ -55,7 +57,7 @@
 <div class="point bad-point">Parties are <span class="bad-term">opaque</span></div>
 <div class="sub-points">
 <span class="drop-container">
-  <a class="drop-target">Complex rules</a>
+  <a class="drop-target" data-position="right middle">Complex rules</a>
   <div class="drop-content">
     <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/_S2G8jhhUHg?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -64,17 +66,19 @@
 <span class="drop-container">
   <a class="drop-target">Partisan</a>
   <div class="drop-content">
-<a href="https://www.washingtonpost.com/blogs/the-fix/wp/2014/04/14/how-congress-became-more-partisan-over-time-in-four-charts"><img width="448" height="252" src="http://img.washingtonpost.com/blogs/the-fix/files/2014/04/2012.jpg"></a>
-<br>
-See: <a class="clean-link" href="https://www.washingtonpost.com/blogs/the-fix/wp/2014/04/14/how-congress-became-more-partisan-over-time-in-four-charts">Washington Post</a>
-@*http://www.brookings.edu/research/interactives/2013/historical-house-ideology-and-party-unity*@
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/akr5E44b7Ks?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
 </span>
 ·
 <span class="drop-container">
-  <a class="drop-target">Rewards conflict</a>
+  <a class="drop-target">Exclusive</a>
   <div class="drop-content">
-    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/akr5E44b7Ks?rel=0" frameborder="0" allowfullscreen></iframe>
+@if(Random.nextBoolean) {
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/4EkGMlHxRQQ?rel=0" frameborder="0" allowfullscreen></iframe>
+} else {
+    <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/yfJeuk9Qizw?rel=0" frameborder="0" allowfullscreen></iframe>
+}
+    @*John oliver, voter id - <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/rHFOwlMCdto?rel=0" frameborder="0" allowfullscreen></iframe>*@
   </div>
 </span>
 </div>
@@ -82,7 +86,7 @@ See: <a class="clean-link" href="https://www.washingtonpost.com/blogs/the-fix/wp
 <div class="point bad-point">Parties <span class="bad-term">corrupt</span> candidates</div>
 <div class="sub-points">
 <span class="drop-container">
-  <a class="drop-target">Poor character</a>
+  <a class="drop-target" data-position="right middle">Poor character</a>
   <div class="drop-content">
     <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/rq4VIJmRiec?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -106,21 +110,21 @@ See: <a class="clean-link" href="https://www.washingtonpost.com/blogs/the-fix/wp
 <div class="point bad-point">Parties enable the <span class="bad-term">wealthy</span> class</div>
 <div class="sub-points">
 <span class="drop-container">
-  <a class="drop-target">Lobbyists first</a>
+  <a class="drop-target" data-position="right middle">Lobbyists first</a>
   <div class="drop-content">
     <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/xcwJt4bcnXs?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
 </span>
 ·
 <span class="drop-container">
-  <a class="drop-target">Employer's choice</a>
+  <a class="drop-target" data-position="top center">Employer's choice</a>
   <div class="drop-content">
     <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/zSQCH1qyIDo?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
 </span>
 ·
 <span class="drop-container">
-  <a class="drop-target">Money is speech</a>
+  <a class="drop-target" data-position="top center">Money is speech</a>
   <div class="drop-content">
     <iframe width="448" height="252" src="https://www.youtube-nocookie.com/embed/EEuZjQmZFJc?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -144,7 +148,7 @@ Simple rules
 ·
 Receptive
 ·
-Rewards success
+Inclusive
 </div>
 
 <div class="point good-point">Alliance <span class="good-term">supports</span> candidates</div>
