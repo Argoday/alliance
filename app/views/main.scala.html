@@ -187,16 +187,24 @@ Community is speech
 <br>
 <!-- AddToAny BEGIN -->
 <div style="display:inline-block;" class="a2a_kit a2a_kit_size_24 a2a_default_style">
-  <a class="a2a_button_facebook"></a>
-  <a class="a2a_button_twitter"></a>
-  <a class="a2a_button_linkedin"></a>
-  <a class="a2a_button_google_plus"></a>
-  <a class="a2a_button_email"></a>
+  <a class="a2a_button_facebook" title="Share on Facebook"></a>
+  <a class="a2a_button_twitter" title="Share on Twitter"></a>
+  <a class="a2a_button_linkedin" title="Share on LinkedIn"></a>
+  <a class="a2a_button_google_plus" title="Share on Google+"></a>
+  <a class="a2a_button_google_gmail" title="Share using gmail"></a>
+  <a class="a2a_button_email" title="Share using email"></a>
 </div>
 <script>
 var a2a_config = a2a_config || {};
+a2a_config.templates = {
+  email: {
+    subject: "Check this out: ${title}",
+    body: "It is time to craft a new political organization to replace the parties.\n${link}"
+  },
+  twitter: "It is time to craft a new political organization to replace the parties. ${link} by @@theallianceus #notaparty"
+};
 a2a_config.linkname = "People's Alliance";
-a2a_config.linkurl = "peoplesalliance.us";
+a2a_config.linkurl = "https://www.peoplesalliance.us";
 a2a_config.onclick = 1;
 a2a_config.num_services = 6;
 a2a_config.color_main = "FFE088";
