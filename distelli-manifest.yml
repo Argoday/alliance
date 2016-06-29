@@ -1,6 +1,7 @@
 argoday/alliance-website:
 
   Build:
+    - printenv
     - echo "-" #./deploy/setup.sh
     - sbt clean compile
   PkgInclude:
